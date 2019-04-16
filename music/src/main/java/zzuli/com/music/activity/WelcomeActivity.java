@@ -1,4 +1,4 @@
-package com.example.myapplication.activity;
+package zzuli.com.music.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,15 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.myapplication.R;
-import com.example.myapplication.adapter.ViewPageAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import zzuli.com.music.R;
+import zzuli.com.music.adapter.ViewPageAdapter;
 
 public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener, ViewPager.OnPageChangeListener {
     private List<ImageView> pointViews = new ArrayList<>();
@@ -121,7 +121,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
         Log.i("SplashActivity:", "onPageScrolled: 当前页面被滑动时调用：：：：position值为： " + position);
         if (position == (viewList.size() - 1)) {//滑动到最后一页
             Log.i("SplashActivity:", "onPageScrollStateChanged: 滑动到最后一页::::::");
-                Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+                Intent intent = new Intent(WelcomeActivity.this, LeftNavigationActivity.class);
             startActivity(intent);
             finish();
 

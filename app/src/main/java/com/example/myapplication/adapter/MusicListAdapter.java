@@ -46,7 +46,7 @@ public class MusicListAdapter  extends BaseAdapter {
         Music music = itemsList.get(position);
         View view = View.inflate(context,R.layout.item_layout,null);
         //标题
-        TextView textMusicTitle = (TextView)view.findViewById(R.id.textMusicTitle);
+        TextView textMusicTitle = (TextView)view.findViewById(R.id.tb_title);
         //作者及专辑
         TextView textArtist = (TextView)view.findViewById(R.id.textMusicArtist);
         //时长
